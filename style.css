@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@font-face {
+  font-family: "TT Lakes Neue Condensed";
+  src: local("TT Lakes Neue Condensed Extra Light"),
+    local("TT-Lakes-Neue-Condensed-Extra-Light"),
+    url("TTLakesNeueCond-XLight.woff2") format("woff2"),
+    url("TTLakesNeueCond-XLight.woff") format("woff"),
+    url("TTLakesNeueCond-XLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Neue";
+  src: local("TT Lakes Neue DemiBold"), local("TT-Lakes-Neue-DemiBold"),
+    url("TTLakesNeue-DBold.woff2") format("woff2"),
+    url("TTLakesNeue-DBold.woff") format("woff"),
+    url("TTLakesNeue-DBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 3rem 1rem;
+  /* background: linear-gradient(45deg, skyblue, dodgerblue, magenta); */
+}
+.container > p {
+  font-family: "TT Lakes Neue Condensed";
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0.5rem;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.container > p span {
+  font-size: 60px;
+  font-family: "TT Lakes Neue";
+}
+
+.nav {
+  padding: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.nav__list {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__item {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-align: center;
+}
+.nav__item.active a {
+  color: white;
+  background: rgb(207, 131, 58);
+  padding: 0.5rem;
+}
+.team-grid {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+
+  padding-bottom: 1rem;
+}
+.profile__card {
+  height: 18rem;
+  width: 17%;
+  min-width: 12rem;
+  margin: 2rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.profile__card img {
+  margin-bottom: 1rem;
+}
+.name span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.desc {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(207, 131, 58);
+  margin-top: 1rem;
+  text-align: center;
+}
